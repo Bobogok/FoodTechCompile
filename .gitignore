@@ -1,3 +1,5 @@
 node_modules
+package-lock.json
 .prettierrc
 app/css/style.min.css
+app/css/style2.min.css

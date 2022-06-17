@@ -59,7 +59,7 @@ function styles() {
 }
 
 function build() {
-  return src(['app/css/style.min.css', 'app/fonts/**/*', 'app/js/main.min.js', 'app/*.html'], { base: 'app' }).pipe(
+  return src(['app/css/style.min.css', 'app/css/style2.min.css', 'app/fonts/**/*', 'app/js/main.min.js', 'app/*.html'], { base: 'app' }).pipe(
     dest('build')
   );
 }
