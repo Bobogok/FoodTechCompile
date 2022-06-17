@@ -1,0 +1,3 @@
+node_modules
+.prettierrc
+app/css/style.min.css

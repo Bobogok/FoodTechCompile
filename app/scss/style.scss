@@ -1,0 +1,292 @@
+@import '_fonts';
+@import '_reset';
+@import '_vars';
+@import '_global';
+@import '_libs';
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 15px 24px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-wrapper {
+    cursor: pointer;
+  }
+
+  &__logo-icon {
+    background: {
+      image: url('../img/icons/Logo.svg');
+      size: 28px 28px;
+    }
+    margin-right: 5px;
+  }
+
+  &__logo-name {
+    font: {
+      family: Gopher;
+      size: 24px;
+      weight: 700;
+    }
+    line-height: 29px;
+    letter-spacing: -0.47px;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+  }
+
+  &__toWrite {
+    width: 124px;
+    height: 30px;
+    border-radius: 8px;
+    // padding: 6px 12px;
+    color: $textOnColor;
+    background-color: $bgPrimary;
+    margin-right: 24px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+  }
+
+  &__changeLang {
+    padding: 6px 12px;
+  }
+}
+
+.colored {
+  background-color: $bgSecondary;
+  height: 600px;
+  width: 100vw;
+  position: absolute;
+
+}
+
+.section {
+  // margin-bottom: 120px;
+  height: 720px;
+  position: relative;
+
+  &__content {
+    position: relative;
+    padding-top: 141px;
+    padding-bottom: 154px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 1px;
+    color: $bgPrimary;
+    opacity: $opacity;
+    margin-bottom: 33px;
+    max-width: 813px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $textSecondary;
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    // letter-spacing: 0.15px;
+
+    // span:first-child {
+    //   letter-spacing: 0.33px;
+    // }
+  }
+
+  &__info {
+    max-width: 605px;
+  }
+
+  &__info-title {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 110%;
+    color: $title;
+    opacity: $opacity;
+    margin-bottom: 48px;
+    letter-spacing: 1px;
+  }
+
+  &__info-image {
+    display: none;
+  }
+
+  &__info-main {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    max-width: 604px;
+  }
+
+  &__info-colored-word {
+    &--purple {
+      color: #570f8a;
+    }
+
+    &--red {
+      color: #e6360f;
+    }
+
+    &--blue {
+      color: #136dec;
+    }
+  }
+
+  &__info-second {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $textSecondary;
+    // letter-spacing: -0.23px;
+    letter-spacing: -0.33px;
+    margin-bottom: 40px;
+    max-width: 550px;
+  }
+
+  &__info-button {
+    width: 118px;
+    height: 32px;
+    // padding: 6px 12px;
+    background-color: $bgButtonSecondary;
+    border-radius: 4px;
+    color: $textSecondary;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.09px;
+    font-size: 14px;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--iphone {
+      top: 62px;
+      right: 136px;
+      width: 290px;
+      height: 588px;
+      background: {
+        image: url('../img/images/desktop/iPhone12Pro1.png');
+        size: 290px 588px;
+        repeat: no-repeat;
+      }
+    }
+
+    &--samsung {
+      top: 61px;
+      right: 147px;
+      width: 268px;
+      height: 588px;
+      background: {
+        image: url('../img/images/desktop/SamsungGalaxyS205G1.png');
+        size: 268px 588px;
+        repeat: no-repeat;
+      }
+    }
+
+    &--macbook {
+      top: 302px;
+      right: 34px;
+      width: 600px;
+      height: 349px;
+      background: {
+        image: url('../img/images/desktop/MacBookPro1.png');
+        size: 600px 349px;
+        repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__connections {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: $textSecondary;
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
+    width: 100%;
+  }
+
+  &__phone,
+  &__telegram {
+    margin-right: 24px;
+  }
+
+  &__phone-title {
+  }
+
+  &__phone-number {
+  }
+
+  &__telegram-title {
+  }
+
+  &__telegram > &__telegram-link,
+  &__email > &__email-address {
+    color: #1a79ff;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__email {
+  }
+
+  &__email-title {
+  }
+
+  &__email-address {
+  }
+
+  &__copyright {
+    align-self: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+    color: $textTertiary;
+    text-align: right;
+    margin-right: 15px;
+  }
+}
+
+// применяется последней
+@import '_media';

@@ -1,0 +1,29 @@
+{
+  "name": "foodtechlanding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://Bobogok.github.io/FoodTechLanding",
+  "scripts": {
+    "predeploy": "npm run gulp build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan M",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gh-pages": "^4.0.0"
+  }
+}
